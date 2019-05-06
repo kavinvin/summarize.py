@@ -55,7 +55,7 @@ def compare_sents_bounded(sent1, sent2):
         return cmpd
     else:
         return 0
-    
+
 
 
 def compute_score(sent, sents):
@@ -128,7 +128,7 @@ def summarize_text(text, block_sep='\n\n', url=None, title=None):
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
-        print(summarize_page(sys.argv[1]))
+        print(summarize_text(sys.argv[1]).summaries)
         sys.exit(0)
 
     print('Usage summarize.py <URL>')
